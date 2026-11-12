@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;600;700&display=swap');
+
+:root {
+  /* Warm Crextio / Nixtio Color Palette & Gradient */
+  --bg-gradient: linear-gradient(135deg, #e4e7ec 0%, #ebe8df 35%, #fce9b8 80%, #fbd578 100%);
+  --bg-sand: #fbf8f2;
+  --bg-card: rgba(255, 255, 255, 0.88);
+  --bg-card-pure: #ffffff;
+  --card-border: rgba(0, 0, 0, 0.06);
+  --card-border-subtle: rgba(255, 255, 255, 0.8);
+  
+  --pill-dark: #1e2229;
+  --pill-dark-hover: #13171d;
+  --pill-dark-text: #ffffff;
+
+  --accent-yellow: #f5b738;
+  --accent-yellow-light: #fef0cd;
+  --accent-yellow-hover: #e5a420;
+
+  --text-main: #14181f;
+  --text-muted: #667085;
+  --text-subtle: #98a2b3;
+  --border-light: #e4e7ec;
+
+  --success: #12b76a;
+  --warning: #f79009;
+  --danger: #f04438;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+  background: var(--bg-gradient);
+  background-attachment: fixed;
+  color: var(--text-main);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  -webkit-font-smoothing: antialiased;
+}
+
+.mono {
+  font-family: 'JetBrains Mono', monospace;
+}
+
+/* Crextio signature soft pill cards */
+.soft-card {
+  background: var(--bg-card);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid var(--card-border-subtle);
+  border-radius: 28px;
+  box-shadow: 0 12px 35px -8px rgba(30, 34, 41, 0.08), 0 4px 12px rgba(0, 0, 0, 0.03);
+}
+
+.soft-card-dark {
+  background: var(--pill-dark);
+  color: #ffffff;
+  border-radius: 28px;
+  box-shadow: 0 16px 36px -10px rgba(19, 23, 29, 0.35);
+}
